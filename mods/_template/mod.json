@@ -1,0 +1,30 @@
+{
+  "id": "<mod-slug>",
+  "game": "<game-slug>",
+  "name": "<mod 显示名>",
+  "type": "script-mod",
+  "source": {
+    "site": "nexusmods",
+    "url": "https://www.nexusmods.com/<game-domain>/mods/<id>",
+    "author": "<author>"
+  },
+  "version": "<version>",
+  "gameBuild": "<build>",
+  "installedAt": "YYYY-MM-DD",
+  "status": "recorded",
+  "requires": [],
+  "files": [
+    {
+      "path": "<game-root>/<relative-path>",
+      "sha256": "<sha256>",
+      "bytes": 0
+    }
+  ],
+  "verify": [
+    "<进游戏后能观察到什么>"
+  ],
+  "uninstall": [
+    "<删除哪些路径>"
+  ],
+  "notes": []
+}

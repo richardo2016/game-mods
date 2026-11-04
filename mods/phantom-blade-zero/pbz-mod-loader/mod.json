@@ -1,0 +1,58 @@
+{
+  "id": "pbz-mod-loader",
+  "game": "phantom-blade-zero",
+  "name": "PBZModLoader",
+  "type": "loader",
+  "source": {
+    "site": "nexusmods",
+    "url": "https://www.nexusmods.com/phantombladezero/mods/113",
+    "author": "LLKKFF"
+  },
+  "version": "0.3.6-preview",
+  "gameBuild": "26367565",
+  "installedAt": "2026-11-04",
+  "status": "verified",
+  "requires": [],
+  "files": [
+    {
+      "path": "<game-root>/platform/steam/version.dll",
+      "sha256": "643FDE8F9A3C800203C2CAA879BA0FED58C772C4FC5B599A7032F87F69C98044",
+      "bytes": 1721856
+    },
+    {
+      "path": "<game-root>/ProjectPBZ/Content/JavaScript/PBZModLoader/bootstrap.js",
+      "sha256": "F47D635A991CDBD48176F30DF65AD10472AB046A79BBC1AB138A9E92986F03FD",
+      "bytes": 1246
+    },
+    {
+      "path": "<game-root>/ProjectPBZ/Content/JavaScript/PBZModLoader/manager.js",
+      "sha256": "48BCD396AA0A44C958DF2C8908ED98F2AF5F62429961B6ABE9106218DD4F40AD",
+      "bytes": 6594
+    },
+    {
+      "path": "<game-root>/ProjectPBZ/PBZModLoader/compiler/tsc.exe",
+      "sha256": "F9ECFBDC93753D2C972D66A8D0D75F5BD737FD4A5F88B422D9091EA282BCB2C7",
+      "bytes": 24520544
+    },
+    {
+      "path": "<game-root>/ProjectPBZ/PBZModLoader/mods.ini",
+      "sha256": "20FBF707086C24C41986575C39F435CD05FC1D1BD2D7234A3AE31E3A88AC5251",
+      "bytes": 220
+    }
+  ],
+  "verify": [
+    "启动游戏不报错，能正常进入主菜单",
+    "<game-root>/ProjectPBZ/PBZModLoader/evidence/<本次运行>/loader.log 中 loaded 计数大于 0"
+  ],
+  "uninstall": [
+    "删除 <game-root>/platform/steam/version.dll（若被其他工具占用则改用备用入口 DLL）",
+    "删除 <game-root>/ProjectPBZ/PBZModLoader",
+    "删除 <game-root>/ProjectPBZ/Content/JavaScript/PBZModLoader"
+  ],
+  "notes": [
+    "预览版加载器，游戏更新后通常需要跟进新版本。",
+    "0.3.5-preview 已被作者撤回，不要使用。",
+    "备用入口 DLL（hid/winmm/dsound/dxgi）与 version.dll 只能选一个，且不要改文件名。",
+    "mods.ini 中 [Loader] Enabled 用于整体开关，[Mods] 下按 id 单独启停。"
+  ]
+}

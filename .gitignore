@@ -1,0 +1,14 @@
+# 第三方二进制一律不进仓库（见 AGENTS.md）
+*.zip
+*.7z
+*.rar
+*.dll
+*.exe
+*.pak
+*.utoc
+*.ucas
+
+# 本地临时文件
+*.log
+.DS_Store
+Thumbs.db
