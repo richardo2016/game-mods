@@ -43,4 +43,4 @@ mods/
 
 - [Phantom Blade Zero](mods/phantom-blade-zero/README.md)
   - [PBZModLoader](mods/phantom-blade-zero/pbz-mod-loader/README.md) — 脚本 mod 加载器
-  - [Map Collectible Markers](mods/phantom-blade-zero/map-collectible-markers/README.md) — 地图收集品标记
+  - [Map Collectible Markers](mods/phantom-blade-zero/map-collectible-markers/README.md) — 地图收集品标记（Fog + 点击传送）

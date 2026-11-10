@@ -8,8 +8,8 @@
     "url": "https://www.nexusmods.com/phantombladezero/mods/134",
     "author": "PaulGao"
   },
-  "version": "1.8.0",
-  "variant": "fog",
+  "version": "1.8.2",
+  "variant": "fog-teleport",
   "gameBuild": "26367565",
   "installedAt": "2026-11-04",
   "status": "verified",
@@ -23,8 +23,13 @@
   "files": [
     {
       "path": "<game-root>/ProjectPBZ/PBZModLoader/mods/PBZMapMarkers/main.js",
-      "sha256": "330D132C5CC08E50E9513A0A1B4FB4B7CC517B8FBD6B6492A204E52F0262E6D6",
-      "bytes": 364668
+      "sha256": "BA54B3208F770FD8DDE5F4DE01E688077A72A2B2CA247D8B829C9C32BC1D41DC",
+      "bytes": 367079
+    },
+    {
+      "path": "<game-root>/ProjectPBZ/Content/JavaScript/PBZModsMenu/Mods/PBZMapMarkers/main.js",
+      "sha256": "BA54B3208F770FD8DDE5F4DE01E688077A72A2B2CA247D8B829C9C32BC1D41DC",
+      "bytes": 367079
     }
   ],
   "verify": [
@@ -32,14 +37,18 @@
     "按 F 打开筛选面板，可逐类开关",
     "按 H 隐藏全部图标，再按一次恢复",
     "对着图标按 V，世界里出现带距离的追踪标记",
-    "筛选面板里的图标大小可在 100% / 80% / 60% 间切换"
+    "筛选面板里的图标大小可在 100% / 80% / 60% 间切换",
+    "点击收集品图标弹出「Teleport to this item? / 传送到这个物品的位置？」确认框",
+    "确认后播放加载画面并到达物品位置（游戏原生传送）"
   ],
   "uninstall": [
-    "删除 <game-root>/ProjectPBZ/PBZModLoader/mods/PBZMapMarkers"
+    "删除 <game-root>/ProjectPBZ/PBZModLoader/mods/PBZMapMarkers",
+    "删除 <game-root>/ProjectPBZ/Content/JavaScript/PBZModsMenu/Mods/PBZMapMarkers（若使用 Mods Menu 形态）"
   ],
   "notes": [
-    "Fog 变体：未清雾区域不显示图标，清雾后出现。与主文件、Teleport、Fog Teleport 互斥，只装一个。",
-    "1.7.3 及更早是 pak 形态，2026-11-04 更新后失效；1.8.0 起改为 PBZModLoader 形态。",
+    "Fog Teleport 变体：未清雾区域不显示图标，清雾后出现；点击图标可传送到该收集品。与主文件、Teleport、Fog 互斥，只装一个。",
+    "传送复用游戏原生传送：有加载画面、可跨区域，会在目的地存档并移动重生点（与敲钟传送一致）。",
+    "1.7.3 及更早是 pak 形态，2026-11-04 更新后失效；1.8.0 起改为 PBZModLoader / Mods Menu 形态。",
     "不要与 UE4SS 版本同时安装，否则每个图标会重复显示。",
     "筛选与按键设置保存在 <saved-dir>/PBZMapMarkers/New/_CSV.csv，删除即重置；H 的隐藏状态不持久。"
   ]

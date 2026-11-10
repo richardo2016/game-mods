@@ -23,7 +23,7 @@ S-GAME Studio，Steam 版。Unreal Engine 5，内容打包使用 IoStore（`.pak
 | mod | 形态 | 状态 |
 | --- | --- | --- |
 | [PBZModLoader](pbz-mod-loader/README.md) | 加载器 | verified |
-| [Map Collectible Markers](map-collectible-markers/README.md) | 脚本 mod | verified |
+| [Map Collectible Markers](map-collectible-markers/README.md) | 脚本 mod（Fog Teleport） | verified |
 
 ## 通用注意
 
